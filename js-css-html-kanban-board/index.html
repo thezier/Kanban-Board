@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS CSS HTML Kanban Board</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="info-container">
+        <h1>⟁ Kanban Board</h1>
+        <p>
+          A place to organize tasks to completion as well as add new ones and
+          delete old ones.
+        </p>
+      </div>
+      <form class="input-container">
+        <div class="fields">
+          <input type="text" id="title" placeholder="Title..." />
+          <input type="text" id="description" placeholder="Description..." />
+        </div>
+        <input type="submit" id="submit-button" />
+      </form>
+    </header>
+
+    <section class="column-container">
+      <div class="task-column" id="inbox">
+        <h3>✉ Inbox</h3>
+        <hr class="custom-hr" />
+        <div class="task-list"></div>
+      </div>
+
+      <div class="task-column" id="in-progress">
+        <h3>◐ In Progress</h3>
+        <hr class="custom-hr" />
+        <div class="task-list"></div>
+      </div>
+
+      <div class="task-column" id="complete">
+        <h3>✔ Completed</h3>
+        <hr class="custom-hr" />
+        <div class="task-list"></div>
+      </div>
+
+      <div class="task-column" id="discard">
+        <h3>✘ Discarded</h3>
+        <hr class="custom-hr" />
+        <div class="task-list"></div>
+      </div>
+    </section>
+
+    <div class="error-container"></div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
